@@ -41,7 +41,6 @@ p {
     color: white;
 }
 
-
 .mainFlexContainer {
     border-radius: 1.5rem;
     display: flex;
@@ -83,19 +82,45 @@ p {
     border-radius: 0.5rem;
 }
 
-input[type=text] {
+.hidden {
+    visibility: hidden;
+}
+
+.formVerification {
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:  hsl(0, 100%, 74%);
+    margin: 0;
+    margin-top: .2rem;
+    padding-right: 2rem;
+}
+
+input[type=text], input[type=password] {
     width: 100%;
     padding: 1rem 1rem;
-    margin: 1rem 0;
-    border: 1px solid #6b6b6b;
+    border: 1px solid #9c9c9c;
     border-radius: 0.2rem;
     box-sizing: border-box;
     outline: none;
 }
+
 input[type=text]:focus {
     border: 1px solid #000000;
     outline: none;
   }
+
+.textAlignRight {
+    text-align: right;
+}  
+
+.iconError {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 1.5rem;
+    top: 2.5rem;
+}
 
 .button {
     font-size: 1rem;
@@ -112,6 +137,7 @@ input[type=text]:focus {
     text-align: center;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 
 .button:hover {

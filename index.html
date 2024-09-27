@@ -28,13 +28,24 @@
       
       <div class="signupForm shadow">
         <form>
-          <input type="text" id="firstName" name="firstName" placeholder="First Name">
+          <div class="textAlignRight"><img id="firstNameIconError" class="iconError hidden" src="./images/icon-error.svg"></img></div>
+          <input id="firstName" type="text" placeholder="First Name">
+          <p id="firstNameNotification" class="formVerification"></p>
+          
+          <div class="textAlignRight"><img id="lastNameIconError" class="iconError hidden" src="./images/icon-error.svg"></img></div>
           <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+          <p id="lastNameNotification" class="formVerification"></p>
+
+          <div class="textAlignRight"><img id="emailAddressIconError" class="iconError hidden" src="./images/icon-error.svg"></img></div>
           <input type="text" id="emailAddress" name="emailAddress" placeholder="Email Address">
-          <input type="text" id="password" name="password" placeholder="Password">         
+          <p id="emailAddressNotification" class="formVerification"></p>
+
+          <div class="textAlignRight"><img id="passwordIconError" class="iconError hidden" src="./images/icon-error.svg"></img></div>
+          <input type="password" id="password" name="password" placeholder="Password">
+          <p id="passwordNotification" class="formVerification"></p>   
         </form>
                 
-        <a href="#" class="button smallShadow">CLAIM YOUR FREE TRIAL</a>
+        <button type="button" class="button smallShadow" onclick="formVerification()">CLAIM YOUR FREE TRIAL</button>
 
         <p><span class="notification">By clicking the button, you are agreeing to our </span><span class="termsAndServices">Terms and Services</span></p>
       </div>
